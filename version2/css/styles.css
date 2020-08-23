@@ -1,0 +1,996 @@
+/** SCSS Variables **/
+/** SCSS Inheritance **/
+body .btn {
+  border-radius: 0.75rem;
+  font-size: 2rem;
+  padding: 0.75rem;
+}
+
+/** SCSS Mixins */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  /** Main (Home) Card */
+  /** About Card */
+  /** Skills Card */
+  /** Projects Card */
+}
+
+body .card {
+  min-height: 100%;
+  width: 100%;
+}
+
+body .card header {
+  background: #222;
+  border-bottom: 2px solid #fff;
+  height: 120px;
+  text-align: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .card header h2 {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4.5rem;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body p {
+  line-height: 1.4rem;
+}
+
+body .btn {
+  background: #222;
+  border: 2px solid transparent;
+  color: white;
+}
+
+body .btn:hover {
+  background: #fff;
+  border-color: #222;
+  color: #222;
+}
+
+body .contact-links {
+  font-size: 3rem;
+  text-align: center;
+}
+
+body .contact-links a:nth-child(2) {
+  margin: 0 1.5rem;
+}
+
+body .contact-links a:nth-child(3) {
+  margin: 0 1.5rem 0 0;
+}
+
+body .list {
+  margin: 1rem 0 0 0;
+}
+
+body #mainCard {
+  background: #fff;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #mainCard .container {
+  width: 100%;
+}
+
+body #mainCard .container h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 8rem;
+  font-weight: normal;
+}
+
+body #mainCard .container nav {
+  margin-top: 2.5rem;
+}
+
+body #mainCard .container nav .btn:nth-child(2) {
+  margin: 0 1.5rem;
+}
+
+body #mainCard .contact-links {
+  bottom: 1.5rem;
+  position: absolute;
+}
+
+body #abtCard .container {
+  min-height: calc(100vh - 122px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #abtCard .container .image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+body #abtCard .container .image img {
+  border-radius: 50%;
+  display: block;
+  height: auto;
+  width: 350px;
+}
+
+body #abtCard .container .about-me {
+  padding: 2rem;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #abtCard .container .about-me .about-description {
+  margin-bottom: 1rem;
+}
+
+body #abtCard .container .about-me .about-description:last-child {
+  margin-bottom: 0;
+}
+
+body #abtCard .container .about-me .contact-links {
+  margin-top: 2rem;
+}
+
+body #abtCard .container .about-me #astateLink {
+  color: red;
+}
+
+body #abtCard .container .about-me #aceLink {
+  color: orange;
+}
+
+body #abtCard .container .about-me #astateLink:hover, body #abtCard .container .about-me #aceLink:hover {
+  text-decoration: underline;
+}
+
+body #skillsCard #skillsGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #skillsCard #skillsGrid .column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+}
+
+body #skillsCard #skillsGrid .column .skill {
+  height: 25vw;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body #skillsCard #skillsGrid .column .skill i {
+  color: #fff;
+  font-size: 10rem;
+  position: absolute;
+}
+
+body #skillsCard #skillsGrid .column .skill .skill-title {
+  background: white;
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 50%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translateY(-51%);
+          transform: translateY(-51%);
+}
+
+body #skillsCard #skillsGrid .column .skill:hover .skill-title {
+  -webkit-transform: translateY(49%);
+          transform: translateY(49%);
+}
+
+body #skillsCard #skillsGrid .column #html {
+  background: #e34f26;
+}
+
+body #skillsCard #skillsGrid .column #css {
+  background: #264DE4;
+}
+
+body #skillsCard #skillsGrid .column #bootstrap {
+  background: #563F7A;
+}
+
+body #skillsCard #skillsGrid .column #sass {
+  background: #cd6799;
+}
+
+body #skillsCard #skillsGrid .column #js {
+  background: #F6DE38;
+}
+
+body #skillsCard #skillsGrid .column #jquery {
+  background: #7CCFF3;
+}
+
+body #skillsCard #skillsGrid .column #php {
+  background: #8892be;
+}
+
+body #skillsCard #skillsGrid .column #mysql {
+  background: #FDA13F;
+}
+
+body #skillsCard #skillsGrid .column #cplusplus {
+  background: #074680;
+}
+
+body #skillsCard #skillsGrid .column #git {
+  background: #F05033;
+}
+
+body #skillsCard #skillsGrid .column #github {
+  background: #323131;
+}
+
+body #skillsCard #skillsGrid .column #illustrator {
+  background: #FD7D23;
+}
+
+body #projectsCard article h3 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+body #projectsCard article .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #projectsCard article .container .website-preview {
+  background: url("../assets/clothespen.png") no-repeat center;
+  background-size: cover;
+  width: 50%;
+}
+
+body #projectsCard article .container .website-preview iframe {
+  height: 100%;
+  width: 100%;
+}
+
+body #projectsCard article .container .website-info {
+  padding: 1.5rem;
+  width: 50%;
+}
+
+body #projectsCard article .container .website-info .website-description {
+  margin-bottom: 0.5rem;
+}
+
+body #projectsCard article .container .website-info .website-description:last-child{
+  margin-bottom: 0;
+}
+
+body #projectsCard article .container .website-info .project-btns {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 2rem;
+}
+
+body #projectsCard article .container .website-info .project-btns a {
+  display: block;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.75rem;
+}
+
+body #projectsCard article .container .website-info .project-btns a:nth-child(1) {
+  margin-right: 1rem;
+}
+
+body #projectsCard #clothesPen h3 {
+  color: #fff;
+  background: #ff2800;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body #projectsCard #clothesPen .website-info p {
+  color: #ff2800;
+}
+
+body #projectsCard #clothesPen .website-info strong {
+  color: #ff2800;
+}
+
+body #projectsCard #clothesPen .website-info .project-btns a {
+  background: #ff2800;
+  border: 2px solid transparent;
+}
+
+body #projectsCard #clothesPen .website-info .project-btns a:hover {
+  background: transparent;
+  border: 2px solid #ff2800;
+  color: #ff2800;
+}
+
+body #projectsCard #coming-soon {
+  font-size: 2rem;
+  padding: 4rem;
+  text-align: center;
+}
+
+/** Media Query - 800px */
+@media (max-width: 800px) {
+  body #skillsCard #skillsGrid .column {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+  body #skillsCard #skillsGrid .column .skill i {
+    font-size: 5rem;
+  }
+  body #skillsCard #skillsGrid .column .skill .skill-title {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  body #projectsCard article .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #projectsCard article .container .website-preview, body #projectsCard article .container .website-info {
+    width: 100%;
+  }
+  body #projectsCard article .container .website-preview {
+    height: 300px;
+  }
+}
+
+/** Media Query - 600px */
+@media (max-width: 600px) {
+  body .card header {
+    height: 80px;
+  }
+  body .card header h2 {
+    font-size: 2.5rem;
+  }
+  body #mainCard .container h1 {
+    font-size: 4rem;
+  }
+  body #mainCard .container nav {
+    margin-top: 2.5rem;
+  }
+  body #mainCard .container nav .btn {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+  body #mainCard .container nav .btn:nth-child(2) {
+    margin: 0 auto;
+  }
+  body #abtCard article .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body #abtCard article .container .image {
+    width: 100%;
+  }
+  body #abtCard article .container .image img {
+    margin-top: 2rem;
+    width: 250px;
+  }
+  body #abtCard article .container .about-me {
+    width: 100%;
+  }
+  body #skillsCard #skillsGrid .column {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  body #skillsCard #skillsGrid .column .skill {
+    padding: 4rem 0;
+  }
+  body #skillsCard #skillsGrid .column .skill i {
+    font-size: 5rem;
+    padding: 1.5rem 0;
+  }
+  body #skillsCard #skillsGrid .column .skill .skill-title {
+    display: none;
+  }
+}
+
+/** Fonts */
+@font-face {
+  font-family: "technology-icons";
+  src: url("../assets/fonts/technology-icons.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "technology-icons";
+  src: url("../assets/fonts/technology-icons.eot");
+  src: url("../assets/fonts/technology-icons.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/technology-icons.woff") format("woff"), url("../assets/fonts/technology-icons.ttf") format("truetype"), url("../assets/fonts/technology-icons.svg?#technology-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "technology-icons";
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons */
+.icon-aftereffects:before {
+  content: "\f101";
+}
+
+.icon-bridge:before {
+  content: "\f102";
+}
+
+.icon-dreamweaver:before {
+  content: "\f103";
+}
+
+.icon-fireworks:before {
+  content: "\f104";
+}
+
+.icon-flash:before {
+  content: "\f105";
+}
+
+.icon-illustrator:before {
+  content: "\f106";
+}
+
+.icon-indesign:before {
+  content: "\f107";
+}
+
+.icon-lightroom:before {
+  content: "\f108";
+}
+
+.icon-photoshop:before {
+  content: "\f109";
+}
+
+.icon-cockpit:before {
+  content: "\f10a";
+}
+
+.icon-drupal:before {
+  content: "\f10b";
+}
+
+.icon-joomla:before {
+  content: "\f10c";
+}
+
+.icon-magento:before {
+  content: "\f10d";
+}
+
+.icon-october:before {
+  content: "\f10e";
+}
+
+.icon-wordpress:before {
+  content: "\f10f";
+}
+
+.icon-visual-studio:before {
+  content: "\f110";
+}
+
+.icon-bootstrap:before {
+  content: "\f111";
+}
+
+.icon-emmet:before {
+  content: "\f112";
+}
+
+.icon-less:before {
+  content: "\f113";
+}
+
+.icon-postcss:before {
+  content: "\f114";
+}
+
+.icon-sass:before {
+  content: "\f115";
+}
+
+.icon-cassandra:before {
+  content: "\f116";
+}
+
+.icon-database:before {
+  content: "\f117";
+}
+
+.icon-hadoop:before {
+  content: "\f118";
+}
+
+.icon-mariadb:before {
+  content: "\f119";
+}
+
+.icon-mongodb:before {
+  content: "\f11a";
+}
+
+.icon-mysql-alt:before {
+  content: "\f11b";
+}
+
+.icon-mysql:before {
+  content: "\f11c";
+}
+
+.icon-postgres:before {
+  content: "\f11d";
+}
+
+.icon-sql:before {
+  content: "\f11e";
+}
+
+.icon-sublime:before {
+  content: "\f11f";
+}
+
+.icon-express:before {
+  content: "\f120";
+}
+
+.icon-grails:before {
+  content: "\f121";
+}
+
+.icon-grailsalt:before {
+  content: "\f122";
+}
+
+.icon-laravel-alt:before {
+  content: "\f123";
+}
+
+.icon-laravel:before {
+  content: "\f124";
+}
+
+.icon-phonegap:before {
+  content: "\f125";
+}
+
+.icon-platter:before {
+  content: "\f126";
+}
+
+.icon-playframework:before {
+  content: "\f127";
+}
+
+.icon-rails-alt:before {
+  content: "\f128";
+}
+
+.icon-rails:before {
+  content: "\f129";
+}
+
+.icon-jira-alt:before {
+  content: "\f12a";
+}
+
+.icon-jira:before {
+  content: "\f12b";
+}
+
+.icon-angular:before {
+  content: "\f12c";
+}
+
+.icon-backbone:before {
+  content: "\f12d";
+}
+
+.icon-d3:before {
+  content: "\f12e";
+}
+
+.icon-ember:before {
+  content: "\f12f";
+}
+
+.icon-jquery-alt:before {
+  content: "\f130";
+}
+
+.icon-jquery:before {
+  content: "\f131";
+}
+
+.icon-react:before {
+  content: "\f132";
+}
+
+.icon-c:before {
+  content: "\f133";
+}
+
+.icon-cplusplus:before {
+  content: "\f134";
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.icon-csharp:before {
+  content: "\f135";
+}
+
+.icon-haskell:before {
+  content: "\f136";
+}
+
+.icon-java:before {
+  content: "\f137";
+}
+
+.icon-nodejs:before {
+  content: "\f138";
+}
+
+.icon-objectivec:before {
+  content: "\f139";
+}
+
+.icon-perl:before {
+  content: "\f13a";
+}
+
+.icon-php-alt:before {
+  content: "\f13b";
+}
+
+.icon-php:before {
+  content: "\f13c";
+}
+
+.icon-python:before {
+  content: "\f13d";
+}
+
+.icon-ruby:before {
+  content: "\f13e";
+}
+
+.icon-scala:before {
+  content: "\f13f";
+}
+
+.icon-debian:before {
+  content: "\f140";
+}
+
+.icon-fedora:before {
+  content: "\f141";
+}
+
+.icon-freebsd:before {
+  content: "\f142";
+}
+
+.icon-gnome:before {
+  content: "\f143";
+}
+
+.icon-java-duke:before {
+  content: "\f144";
+}
+
+.icon-kde:before {
+  content: "\f145";
+}
+
+.icon-linux-mint:before {
+  content: "\f146";
+}
+
+.icon-netbsd:before {
+  content: "\f147";
+}
+
+.icon-rasbaerrypi:before {
+  content: "\f148";
+}
+
+.icon-redhat:before {
+  content: "\f149";
+}
+
+.icon-solaris:before {
+  content: "\f14a";
+}
+
+.icon-suse:before {
+  content: "\f14b";
+}
+
+.icon-ubuntu:before {
+  content: "\f14c";
+}
+
+.icon-autoit:before {
+  content: "\f14d";
+}
+
+.icon-browsersync:before {
+  content: "\f14e";
+}
+
+.icon-confluence:before {
+  content: "\f14f";
+}
+
+.icon-dynamicweb:before {
+  content: "\f150";
+}
+
+.icon-babel:before {
+  content: "\f151";
+}
+
+.icon-webpack:before {
+  content: "\f152";
+}
+
+.icon-osx:before {
+  content: "\f153";
+}
+
+.icon-codeignitor:before {
+  content: "\f154";
+}
+
+.icon-composer:before {
+  content: "\f155";
+}
+
+.icon-zend:before {
+  content: "\f156";
+}
+
+.icon-apache:before {
+  content: "\f157";
+}
+
+.icon-jetty:before {
+  content: "\f158";
+}
+
+.icon-memcached:before {
+  content: "\f159";
+}
+
+.icon-nginx-alt:before {
+  content: "\f15a";
+}
+
+.icon-nginx:before {
+  content: "\f15b";
+}
+
+.icon-redis:before {
+  content: "\f15c";
+}
+
+.icon-tomcat:before {
+  content: "\f15d";
+}
+
+.icon-ec3:before {
+  content: "\f15e";
+}
+
+.icon-github-circle-alt:before {
+  content: "\f15f";
+}
+
+.icon-github-circle:before {
+  content: "\f160";
+}
+
+.icon-github:before {
+  content: "\f161";
+}
+
+.icon-google-code:before {
+  content: "\f162";
+}
+
+.icon-heroku:before {
+  content: "\f163";
+}
+
+.icon-shell-alt:before {
+  content: "\f164";
+}
+
+.icon-shell:before {
+  content: "\f165";
+}
+
+.icon-shellscript:before {
+  content: "\f166";
+}
+
+.icon-opensource:before {
+  content: "\f167";
+}
+
+.icon-bower:before {
+  content: "\f168";
+}
+
+.icon-grunt:before {
+  content: "\f169";
+}
+
+.icon-gulp:before {
+  content: "\f16a";
+}
+
+.icon-selenium:before {
+  content: "\f16b";
+}
+
+.icon-git-squared:before {
+  content: "\f16c";
+}
+
+.icon-git:before {
+  content: "\f16d";
+}
+
+.icon-svn:before {
+  content: "\f16e";
+}
+
+.icon-css-alt:before {
+  content: "\f16f";
+}
+
+.icon-css3-alt:before {
+  content: "\f170";
+}
+
+.icon-css3:before {
+  content: "\f171";
+}
+
+.icon-html5:before {
+  content: "\f172";
+}
+
+.icon-js:before {
+  content: "\f173";
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,91 @@
+* {
+  color: #222;
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: blue;
+  overflow: hidden;
+}
+.card {
+  background: #fff;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+body, .card {
+  height: 100vh;
+  width: 100vw;
+}
+#main {
+  background: white;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+#about {
+  top: 0;
+  right: 100vw;
+  z-index: 2;
+}
+#skills {
+  top: 100vh;
+  z-index: 2;
+}
+#projects {
+  top: 0;
+  left: 100vw;
+  z-index: 2;
+}
+h1 {
+  font-size: 8rem;
+  font-family: 'Do Hyeon', sans-serif;
+}
+div {
+  margin-top: 1rem;
+}
+a {
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+  background: #222;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  transition: right 0.5s ease;
+}
+a:hover {
+  background: #fff;
+  color: #222;
+  border: 2px solid #222;
+}
+header {
+  background: #222;
+  height: auto;
+  padding-left: 1.5rem;
+}
+h2 {
+  color: #fff;
+  display: inline;
+  font-size: 6rem;
+  font-family: 'Do Hyeon', sans-serif;
+  text-align: center;
+}
+i {
+  background:#222;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  padding: 40px;
+}
+#abtClose, #skillsClose, #projectsClose {
+  font-size: 2.5rem;
+}
+i:hover {
+  background: red;
+}

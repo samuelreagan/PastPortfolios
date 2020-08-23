@@ -1,0 +1,182 @@
+//Variables
+$blue: #252839;
+$darkgrey: #677077;
+$grey: #b5b5b7;
+$yellow: #f2bb32;
+$white: #fff;
+
+//Inheritance
+%flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+%transition {
+  transition: 0.2s all ease;
+}
+
+//Mix-Ins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/** Reset CSS **/
+* {
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+/*** Global Elements ***/
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+html,body, main {
+  width: 100%;
+}
+body {
+  height: 100%;
+  overflow: hidden;
+}
+header, section, footer {
+  @extend %flex;
+}
+.container {
+  text-align: center;
+  width: 70%;
+}
+.sectionHeader {
+  font-size: 3rem;
+}
+/*** Header ***/
+header {
+  background: $yellow;//url("../images/background-3.svg");
+  background-position:   center;
+  background-repeat:     no-repeat;
+  background-size:       cover;
+  color: $blue;
+  height: 100vh;
+  .bar {
+    transition: 1.2s ease all;
+    background: $blue;
+    display: block;
+    height: 20vh;
+    position: fixed;
+    z-index: 1;
+  }
+  .one {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .two {
+    right: 0;
+    top: 20vh;
+    width: 100%;
+  }
+  .three {
+    left: 0;
+    top: 40vh;
+    width: 100%;
+  }
+  .four {
+    right: 0;
+    top: 60vh;
+    width: 100%;
+  }
+  .five {
+    left: 0;
+    top: 80vh;
+    width: 100%;
+  }
+  nav {
+    @extend %flex;
+    background: $blue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.2rem;
+    height: 50px;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    a {
+      @extend %transition;
+      color: $yellow;
+    }
+    a:hover {
+      color: white;
+    }
+  }
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 2px -2px 0 $yellow,
+      -2px 2px  0 $yellow,
+      -2px -2px  0 $yellow,
+      2px 2px  0 $yellow;
+  }
+  h3 {
+    font-size: 2.0rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px -1px 0 $yellow,
+      -1px 1px  0 $yellow,
+      -1px -1px  0 $yellow,
+      1px 1px  0 $yellow;
+  }
+  #explore {
+    @extend %transition;
+    @include border-radius(15px);
+    background: $blue;
+    border: 2px solid $yellow;
+    color: $yellow;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transform: scale(1,1);
+  }
+  #explore:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+/*** About ***/
+#about {
+  background: $blue;
+  color: $yellow;
+  height: 35vh;
+}
+
+/*** Services ***/
+#services {
+  background: $white;
+  height: 35vh;
+}
+
+/*** Portfolio ***/
+#portfolio {
+  background: $blue;
+  height: 100vh;
+}
+
+/*** Contact ***/
+#contact {
+  background: $darkgrey;
+  height: 30vh;
+}
+
+/*** Footer ***/
+footer {
+  background: $yellow;
+  color: $blue;
+  height: 10vh;
+}

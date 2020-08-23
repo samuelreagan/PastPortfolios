@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sam Reagan</title>
+    <link rel="stylesheet" href="styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="card" id="main">
+      <h1>Sam Reagan</h1>
+      <div>
+        <a href="#" class="button" id="aboutBtn">About</a>
+        <a href="#" class="button" id="skillsBtn">Skills</a>
+        <a href="#" class="button" id="projectsBtn">Projects</a>
+      </div>
+    </section>
+    <section class="card" id="about">
+      <header>
+        <h2>About</h2>
+        <i class="fa fa-close" id="abtClose"></i>
+      </header>
+    </section>
+    <section class="card" id="skills">
+      <header>
+        <h2>Skills</h2>
+        <i class="fa fa-close" id="skillsClose"></i>
+      </header>
+    </section>
+    <section class="card" id="projects">
+      <header>
+        <h2>Projects</h2>
+        <i class="fa fa-close" id="projectsClose"></i>
+      </header>
+    </section>
+    <script>
+      var aboutBtn = document.getElementById("aboutBtn");
+      var abtClose = document.getElementById("abtClose");
+      var skillsBtn = document.getElementById("skillsBtn");
+      var skillsClose = document.getElementById("skillsClose");
+      var projectsBtn = document.getElementById("projectsBtn");
+      var projectsClose = document.getElementById("projectsClose");
+      var aboutCard = document.getElementById("about");
+      var skillsCard = document.getElementById("skills");
+      var projectsCard = document.getElementById("projects");
+      aboutBtn.onclick = function() {
+        aboutCard.style.right = "0vw";
+      }
+      abtClose.onclick = function() {
+        aboutCard.style.right = "100vw";
+      }
+      skillsBtn.onclick = function() {
+        skillsCard.style.top = "0vh";
+      }
+      skillsClose.onclick = function() {
+        skillsCard.style.top = "100vh";
+      }
+      projectsBtn.onclick = function() {
+        projectsCard.style.left = "0vw";
+      }
+      projectsClose.onclick = function() {
+        projectsCard.style.left = "100vw";
+      }
+    </script>
+  </body>
+</html>
